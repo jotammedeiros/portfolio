@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de contato do portfólio de João Paulo Medeiros.">
+    <title>João Paulo | Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+    <header class="cabecalho">
+        <a class="logo" href="index.html">JP<span>.</span></a>
+        <button class="botao-menu" id="botaoMenu" aria-label="Abrir menu">☰</button>
+
+        <nav class="menu" id="menu">
+            <a href="index.html">Sobre mim</a>
+            <a href="formacao.html">Formação</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a class="ativo" href="contato.html">Contato</a>
+            <button class="tema" id="botaoTema" type="button" aria-label="Alternar tema">☾</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pagina-topo">
+            <p class="etiqueta">CONTATO</p>
+            <h1>Vamos conversar</h1>
+            <p>Preencha o formulário abaixo.</p>
+        </section>
+
+        <section class="secao contato-area">
+            <div class="cartao contato-info">
+                <h2>Entre em contato</h2>
+               
+                <ul>
+                    <li>✓ Nome obrigatório</li>
+                    <li>✓ E-mail com formato válido</li>
+                    <li>✓ Mensagem obrigatória</li>
+                    <li>✓ Limpeza dos campos após envio</li>
+                </ul>
+            </div>
+
+            <form class="formulario" id="formContato" novalidate>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                <small class="erro" id="erroNome"></small>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="usuario@dominio.com">
+                <small class="erro" id="erroEmail"></small>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem"></textarea>
+                <small class="erro" id="erroMensagem"></small>
+
+                <button class="botao" type="submit">Enviar mensagem</button>
+                <p class="sucesso" id="mensagemSucesso"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>João Paulo</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
